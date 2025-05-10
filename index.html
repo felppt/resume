@@ -1,104 +1,226 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Резюме Алена Орлова</title>
-    <link rel="stylesheet" href="styles.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="styles/main.css">
+   <link rel="stylesheet" href="fontawesome/css/all.min.css">
 </head>
+
 <body>
-    <div class="resume">
-        <header>
-            <h1>ОРЛОВА АЛЁНА</h1>
-            <p class="subtitle">Разработчик</p>
-        </header>
-        <div class="profile">
-            <img src="" alt="Фото">
-            <div class="contact-info">
-                <h2>КОНТАКТЫ</h2>
-                <ul>
-                    <li><a href="mailto:felppt@gmail.com">felppt@gmail.com</a></li>
-                    <li><a href="https://github.com/felppt">github.com/felppt</a></li>
-                    <li>Москва, м. Планерная</li>
-                </ul>
-                <p><strong>Возраст:</strong> 28 лет</p>
-                <p><strong>Желаемая зарплата:</strong> 200 000 руб</p>
-                <p><strong>Занятость:</strong> Полная занятость, удалённая работа</p>
+   <section class="header-section">
+      <div class="container">
+         <div class="employee-name">Орлова Алёна</div>
+         <div class="employee-profession">Backend-разработчик PHP</div>
+      </div>
+   </section>
+
+   <section class="main-section">
+      <div class="container">
+         <div class="main-content">
+            <div class="left-block">
+               <div class="avatar">
+                  <img src="public/images/avatar.jpg" alt="" >
+               </div>
+
+               <div class="contacts">
+                  <h3>Контакты</h3>
+                  <div class="contact">
+                     <i class="fa-solid fa-envelope"></i> <a href="mailto:felppt@gmail.com">felppt@gmail.com</a>
+                  </div>
+                  <div class="contact">
+                     <i class="fa-brands fa-github"></i> <a
+                        href="https://github.com/felppt">https://github.com/felppt</a>
+                  </div>
+                  <div class="contact">
+                     <i class="fa-solid fa-location-dot"></i> <span>Москва, м. Планерная</span>
+                  </div>
+               </div>
+
+               <div class="main-info">
+
+                  <div class="info">
+                     <div class="info-key">Возраст</div>
+                     <div class="info-value">28 лет</div>
+                  </div>
+
+                  <div class="info">
+                     <div class="info-key">Желаемая зарплата</div>
+                     <div class="info-value">200 000 руб.</div>
+                  </div>
+
+                  <div class="info">
+                     <div class="info-key">Занятость</div>
+                     <div class="info-value">Полная занятость, удаленная работа</div>
+                  </div>
+               </div>
+
+               <div class="skills">
+                  <h3>Навыки</h3>
+
+                  <div class="skill">
+                     <div class="skill-name">Английский язык <span class="skill-level">B1</span></div>
+                     <progress value="40" max="100"></progress>
+                  </div>
+               </div>
+
+               <!-- <div class="">
+                  <h3>О себе</h3>
+                 
+               </div> -->
             </div>
-        </div>
-        <div class="main-content">
-            <section>
-                <h2>ОПЫТ РАБОТЫ</h2>
-                <div class="job">
-                    <h3>amoCRM</h3>
-                    <p class="job-duration">Май 2023 — Ноя 2023</p>
-                    <p><strong>Web-разработчик</strong></p>
-                    <ul>
-                        <li>Разработка и поддержка интеграций</li>
-                        <li>Исправление багов</li>
-                        <li>Рефакторинг чужого кода</li>
-                        <li>Написание тест-кейсов</li>
-                    </ul>
-                </div>
-                <div class="job">
-                    <h3>Копирка</h3>
-                    <p class="job-duration">Ноя 2023 — н.в.</p>
-                    <p><strong>Web-разработчик</strong></p>
-                    <ul>
-                        <li>Сбор требований, участие в составлении ТЗ</li>
-                        <li>Создание и доработка функционала CMS</li>
-                        <li>Оптимизация кода и запросов к базе данных</li>
-                        <li>Работа с внешними API</li>
-                        <li>Разработка интеграций со сторонними сервисами</li>
-                        <li>Рефакторинг чужого кода</li>
-                    </ul>
-                </div>
-            </section>
-            <section>
-                <h2>ОБРАЗОВАНИЕ</h2>
-                <p><strong>Сеченовский университет, Специалист</strong></p>
-                <p>Фармация. Провизор</p>
-                <p class="job-duration">2019</p>
-            </section>
-            <section>
-                <h2>КУРСЫ</h2>
-                <div class="course">
-                    <p><strong>Яндекс Практикум</strong></p>
-                    <p>Основы работы с git</p>
-                    <p class="job-duration">2023</p>
-                </div>
-                <div class="course">
-                    <p><strong>Институт программных систем</strong></p>
-                    <p>Основы работы с базами данных</p>
-                    <p class="job-duration">2023</p>
-                </div>
-                <div class="course">
-                    <p><strong>stepik</strong></p>
-                    <p>Тестирование ПО с нуля. Теория + Практика</p>
-                    <p class="job-duration">2024</p>
-                </div>
-            </section>
-            <section>
-                <h2>НАВЫКИ</h2>
-                <ul>
-                    <li>Postman</li>
-                    <li>html</li>
-                    <li>javascript</li>
-                    <li>sql</li>
-                    <li>css</li>
-                    <li>git</li>
-                    <li>php</li>
-                    <li>docker</li>
-                    <li>linux</li>
-                </ul>
-            </section>
-        </div>
-        <footer>
-            <h2>ЯЗЫКИ</h2>
-            <p><strong>Английский:</strong> B1</p>
-            <h2>О СЕБЕ</h2>
-            <p>[Ваш текст о себе]</p>
-        </footer>
-    </div>
+            <div class="right-block">
+
+               <div>
+                  <div class="section-name">Опыт работы</div>
+                  <div class="section-items">
+                     <div>
+                        <div class="section-item">
+                           <div class="section-key">amoCRM</div>
+                           <div class="section-date">Май 2023 - Ноябрь 2023</div>
+                        </div>
+
+                        <i class="section-subtitle">Web-разработчик</i>
+                        <ul>
+                           <li>Разработка и поддержка интеграций</li>
+                           <li>Внедрение платежных систем</li>
+                           <li>Исправление багов</li>
+                           <li>Рефакторинг чужого кода</li>
+                           <li>Написание тест-кейсов</li>
+                        </ul>
+                     </div>
+
+                     <div>
+                        <div class="section-item">
+                           <div class="section-key">Копирка</div>
+                           <div class="section-date">Ноябрь 2023 - н.в.</div>
+                        </div>
+
+                        <i class="section-subtitle">Web-разработчик</i>
+                        <ul>
+                           <li>Участие в формировании требований, разработке технических заданий и определении
+                              архитектурных решений.</li>
+                           <li>Разработка, сопровождение и оптимизация функциональности CMS/CRM систем, включая
+                              внедрение новых модулей и
+                              компонентов.</li>
+                           <li>Оптимизация производительности приложений и баз данных посредством анализа узких мест,
+                              рефакторинга кода и
+                              применения техник кэширования.</li>
+                           <li>Интеграция с внешними API, разработка и поддержка.</li>
+                           <li>Разработка интеграционных решений для сторонних сервисов, автоматизация бизнес-процессов
+                              и расширение функциональных
+                              возможностей платформы.</li>
+                           <li>Рефакторинг кода, улучшение структуры, читаемости и поддерживаемости кодовой базы.</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+
+               <div>
+                  <div class="section-name">Образование</div>
+                  <div class="section-items">
+                     <div>
+                        <div class="section-item">
+                           <div class="section-key">Сеченовский университет, Специалист</div>
+                           <div class="section-date">2019</div>
+                        </div>
+                        <div>Фармация. Провизор</div>
+                     </div>
+                  </div>
+               </div>
+
+               <div>
+                  <div class="section-name">Курсы</div>
+                  <div class="section-items">
+                     <div>
+                        <div class="section-item">
+                           <div class="section-key">Яндекс Практикум</div>
+                           <div class="section-date">2019</div>
+                        </div>
+                        <div>Основы работы с git</div>
+                     </div>
+
+                     <div>
+                        <div class="section-item">
+                           <div class="section-key">Институт программных систем</div>
+                           <div class="section-date">2019</div>
+                        </div>
+                        <div>Основы работы с базами данных</div>
+                     </div>
+
+                     <div>
+                        <div class="section-item">
+                           <div class="section-key">stepik</div>
+                           <div class="section-date">2024</div>
+                        </div>
+                        <div>Тестирование ПО с нуля. Теория + практика</div>
+                     </div>
+                  </div>
+               </div>
+
+               <div>
+                  <div class="section-name">Навыки технологий</div>
+
+                  <div class="grid-2 mb-10">
+                     <div class="skill">
+                        <div class="skill-name">Postman</div>
+                        <progress value="50" max="100"></progress>
+                     </div>
+                     <div class="skill">
+                        <div class="skill-name">HTML</div>
+                        <progress value="50" max="100"></progress>
+                     </div>
+                  </div>
+
+                  <div class="grid-2 mb-10">
+                     <div class="skill">
+                        <div class="skill-name">javascript</div>
+                        <progress value="50" max="100"></progress>
+                     </div>
+                     <div class="skill">
+                        <div class="skill-name">sql</div>
+                        <progress value="80" max="100"></progress>
+                     </div>
+                  </div>
+
+                  <div class="grid-2 mb-10">
+                     <div class="skill">
+                        <div class="skill-name">css</div>
+                        <progress value="50" max="100"></progress>
+                     </div>
+                     <div class="skill">
+                        <div class="skill-name">git</div>
+                        <progress value="50" max="100"></progress>
+                     </div>
+                  </div>
+
+                  <div class="grid-2 mb-10">
+                     <div class="skill">
+                        <div class="skill-name">php</div>
+                        <progress value="70" max="100"></progress>
+                     </div>
+                     <div class="skill">
+                        <div class="skill-name">docker</div>
+                        <progress value="50" max="100"></progress>
+                     </div>
+                  </div>
+
+                  <div class="grid-2 mb-10">
+                     <div class="skill">
+                        <div class="skill-name">linux</div>
+                        <progress value="30" max="100"></progress>
+                     </div>
+                     <div class="skill">
+
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
 </body>
+
 </html>
